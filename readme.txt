@@ -1,12 +1,12 @@
 === Blockylicious ===
-Contributors:      Tom, Jean, and The WordPress Contributors
+Contributors:      Jean and The WordPress Contributors
 Tags:              block
-Tested up to:      6.7
+Tested up to:      6.8
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Custom plugin with 3? custom blocks and custom text effects. Scaffolded with Create Block Theme, then modified.
+Custom plugin with 3 custom blocks and custom text effects. Scaffolded with Create Block Theme, then modified.
 
 == Installation ==
 
@@ -42,18 +42,10 @@ It also uses a filter with 'block_categories_all' and a custom function 'blockyl
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= A question  =
 
-An answer to that question.
+An answer .
 
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
 
 == Changelog ==
 
@@ -70,7 +62,6 @@ WordPress 6.6 and later versions introduced a unified approach to block splittin
 RichText’s optional onSplit prop was deprecated. Since the block.json "splitting" setting determines if we can split a block, we no longer need the block to pass an onSplit function.
 
 == More Information ==
-My local WP git repos are here: /Users/jeankuyk/GitRepos/WP-Plugin-repos/
 
-Low Highlight Rich Text effects
+= Low Highlight Rich Text effects =
 An additional script in index.js was added to register a custom text effect. NOT WORKING so far.
