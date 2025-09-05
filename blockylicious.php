@@ -78,11 +78,13 @@ final class Blockylicious
 			 * End of the block type(s) registration
 			 */
 
-
 			// Enqueue custom scripts NOT WORKING YET
 			$script_url = plugins_url('build/index.js', __FILE__);
-			wp_enqueue_script('blockylicious-index', $script_url, array('wp-blocks', 'wp-element', 'wp-editor'), filemtime(__DIR__ . '/build/index.js'), true);
-			// I added filemtime to ensure the script is reloaded when modified. REMOVE after development
+			wp_enqueue_script('blockylicious-index', $script_url, array('wp-blocks', 'wp-element', 'wp-editor'));
+
+			$style_url = plugins_url("build/style-index.css", __FILE__);
+			wp_enqueue_style('blockylicious-style', $style_url, array());
+
 			// End enqueuing scripts and styles
 
 			/**
