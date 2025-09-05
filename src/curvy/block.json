@@ -1,0 +1,126 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blockylicious/curvy",
+	"version": "0.1.0",
+	"title": "Curvy",
+	"category": "blockylicious_custom",
+	"icon": "smiley",
+	"description": "Curvy section dividers to enhance page design.",
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/heading",
+				"attributes": {
+					"content": "Example Curvy Block"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "A design to make your words shine."
+				}
+			}
+		]
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"variations": [
+		{
+			"name": "top-only",
+			"title": "Curvy - Top",
+			"attributes": {
+				"enableTopCurve": true,
+				"enableBottomCurve": false
+			}
+		},
+		{
+			"name": "bottom-only",
+			"title": "Curvy - Bottom",
+			"attributes": {
+				"enableTopCurve": false,
+				"enableBottomCurve": true
+			}
+		}
+	],
+	"attributes": {
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "var(--wp--preset--color--contrast)"
+				},
+				"spacing": {
+					"padding": {
+						"top": "80px",
+						"right": "50px",
+						"bottom": "80px",
+						"left": "50px"
+					}
+				}
+			}
+		},
+		"enableTopCurve": {
+			"type": "boolean",
+			"default": true
+		},
+		"topWidth": {
+			"type": "number",
+			"default": 100
+		},
+		"topHeight": {
+			"type": "number",
+			"default": 100
+		},
+		"topFlipX": {
+			"type": "boolean",
+			"default": false
+		},
+		"topFlipY": {
+			"type": "boolean",
+			"default": false
+		},
+		"topColor": {
+			"type": "string",
+			"default": "var(--wp--preset--color--base)"
+		},
+		"enableBottomCurve": {
+			"type": "boolean",
+			"default": true
+		},
+		"bottomWidth": {
+			"type": "number",
+			"default": 100
+		},
+		"bottomHeight": {
+			"type": "number",
+			"default": 100
+		},
+		"bottomFlipX": {
+			"type": "boolean",
+			"default": false
+		},
+		"bottomFlipY": {
+			"type": "boolean",
+			"default": false
+		},
+		"bottomColor": {
+			"type": "string",
+			"default": "var(--wp--preset--color--base)"
+		}
+	},
+	"textdomain": "blockylicious",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

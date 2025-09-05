@@ -1,0 +1,45 @@
+.wp-block-blockylicious-piccy-gallery.wp-block-blockylicious-piccy-gallery {
+	.edit-mode {
+		padding: 2.5rem 1rem; /* Adjust padding? */
+		box-sizing: border-box;
+		position: relative;
+		background-color: #ddd;
+
+		.gallery-label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			padding: 0.5rem;
+			background-color: #ccc;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+		}
+
+		.piccy-gallery-inner-blocks {
+			display: grid;
+			grid-template-columns: repeat(
+				3,
+				1fr
+			); /* piccyImage blocks display in 3 cols in Edit mode */
+			gap: 0.8rem;
+		}
+	}
+	.preview-mode {
+		background-color: #ddd; /* default background color.*/
+		padding: 0.4rem;
+		display: grid;
+		grid-template-columns: repeat(
+			6,
+			1fr
+		); /* piccyImage blocks display in 6 cols in Preview mode */
+		gap: 0.8rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.piccy-image-preview {
+		max-width: 100%;
+		object-fit: contain;
+	}
+}

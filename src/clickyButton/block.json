@@ -1,0 +1,76 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "blockylicious/clicky-button",
+    "version": "0.1.0",
+    "title": "Clicky Button",
+    "category": "blockylicious_custom",
+    "icon": "smiley",
+    "description": "Custom CTA button will link to selected post or page rather than URL.",
+    "example": {},
+    "supports": {
+        "html": false,
+        "splitting": false,
+        "color": {
+            "background": true,
+            "text": true,
+            "link": false,
+            "gradient": true,
+            "enableContrastChecker": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        }
+    },
+    "attributes": {
+        "labelText": {
+            "type": "string",
+            "default": ""
+        },
+        "postType": {
+            "type": "string",
+            "default": ""
+        },
+        "linkedPostId": {
+            "type": "number"
+        },
+        "style": {
+            "type": "object",
+            "default": {
+                "color": {
+                    "background": "#808080",
+                    "text": "#ffffff"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "1rem",
+                        "right": "1rem",
+                        "bottom": "1rem",
+                        "left": "1rem"
+                    }
+                },
+                "border": {
+                    "color": "#888888",
+                    "radius": "0px",
+                    "style": "solid",
+                    "width": "1px"
+                }
+            }
+        }
+    },
+    "textdomain": "blockylicious",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php",
+    "parent": [
+        "blockylicious/clicky-group"
+    ]
+}
