@@ -1,7 +1,7 @@
 {
-	"name": "curvy",
+	"name": "blockylicious",
 	"version": "0.1.0",
-	"description": "Custom curvy block scaffolded with Create Block tool.",
+	"description": "Custom curvy block and call-to-action buttons.",
 	"author": "Jean and the WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
