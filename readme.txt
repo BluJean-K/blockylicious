@@ -2,7 +2,7 @@
 Contributors:      Jean and The WordPress Contributors
 Tags:              block
 Tested up to:      6.8
-Stable tag:        0.1.0
+Stable tag:        1.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,11 +48,13 @@ An answer .
 
 
 == Changelog ==
+= 1.1.0 =
+* Release
+Adjusted structure and path to include the blockylicious-block-patterns.php file. Moved from root to src directory.
+Added options in package.json for start and build scripts. See NPM Notes.
 
 = 0.1.0 =
-* Release
-
-(JeanK)
+(JeanK development)
 Changes to RichText component in clickyButton/edit.js:
 Added identifier='labelText'
 Removed this line: onSplit={() => { }} onReplace={() => { }}

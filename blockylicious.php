@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Blockylicious
  * Description:       A plugin offering funky blocks.
- * Version:           0.1.0
+ * Version:           1.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Jean Kuyk
@@ -51,7 +51,7 @@ final class Blockylicious
 				'label' => __('Blockylicious', 'blockylicious')
 			));
 			// register_block_pattern functions moved to blockylicious_block_patterns file
-			require_once 'blockylicious-block-patterns.php';
+			require_once  __DIR__ . '/build/blockylicious-block-patterns.php';
 
 			/**
 			 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s) based on the registered block metadata. Added in WordPress 6.8 to simplify the block metadata registration process added in WordPress 6.7.
