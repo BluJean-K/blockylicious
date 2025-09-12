@@ -1,28 +1,35 @@
 === Blockylicious ===
 Contributors:      Jean and The WordPress Contributors
 Tags:              block
+Requires at least: 6.7
 Tested up to:      6.8
 Stable tag:        1.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Custom plugin with 3 custom blocks and custom text effects. Scaffolded with Create Block Theme, then modified.
+Custom plugin with 3 custom blocks and custom text effects.
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen by selecting the zip archive.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 
 == Description ==
+= Curvy Block =
+An adjustable curvy svg shape can be used as a contrasting background to make any text stand out.
 
-Note that the view.js file should be removed if you don't end up using it.
-Note that in block.json, at the bottom is "viewScript": "file:./view.js"
-You'll need to choose between "viewScript" or "viewScriptModule." The viewScriptModule is a newer field that lets you use the Interactivity API
+= Piccy Block = 
+A special gallery diplays clickable thumbnail images and the only the selected image full-size.
 
-Note that in block.json the support for html mode is disabled for some blocks.(Editor can't directly edit the code) If you want to enable html mode, change this to _true_
-"supports": {
-		"html": false, }
+= Clicky Buttons =
+Upgraded buttons can link to any standard or custom post site on your site. The URL uses the post ID, so changing the title of the post will not break the link.
+
+= Low Highlight Rich Text effects =
+Custom script in index.js registers a unique text effect.
+
+= Unique Blockylicious Design Patterns = 
+Design patterns make it easy and quick for you to start using the plugin. Add call-to-action sections with the Curvy block or a set of Clicky Buttons with headings and text that you can customize.
 
 
 
@@ -42,9 +49,9 @@ It also uses a filter with 'block_categories_all' and a custom function 'blockyl
 
 == Frequently Asked Questions ==
 
-= A question  =
+= Can I use Blockylicious custom blocks with WooCommerce?  =
 
-An answer .
+Yes, Blockylicious can be installed on the same site where you have WooCommerce installed. Blockylicious won't change the appearance of your store until you manually add the custom blocks and styles provided wherever you would like it to appear.
 
 
 == Changelog ==
@@ -64,6 +71,11 @@ WordPress 6.6 and later versions introduced a unified approach to block splittin
 RichText’s optional onSplit prop was deprecated. Since the block.json "splitting" setting determines if we can split a block, we no longer need the block to pass an onSplit function.
 
 == More Information ==
+= Developers =
+Note that the view.js file should be removed if you don't end up using it.
+Note that in block.json, at the bottom is "viewScript": "file:./view.js"
+You'll need to choose between "viewScript" or "viewScriptModule." The viewScriptModule is a newer field that lets you use the Interactivity API
 
-= Low Highlight Rich Text effects =
-An additional script in index.js was added to register a custom text effect. NOT WORKING so far.
+Note that in block.json the support for html mode is disabled for some blocks.(Editor can't directly edit the code) If you want to enable html mode, change this to _true_
+"supports": {
+		"html": false, }
