@@ -51,7 +51,7 @@ It also uses a filter with 'block_categories_all' and a custom function 'blockyl
 
 = Can I use Blockylicious custom blocks with WooCommerce?  =
 
-Yes, Blockylicious can be installed on the same site where you have WooCommerce installed. Blockylicious won't change the appearance of your store until you manually add the custom blocks and styles provided wherever you would like it to appear.
+Yes, Blockylicious can be installed on the same site where you have WooCommerce installed. It can be used to add blocks and styles to your pages and blog posts. To add Blockylicious to your product pages, edit the template that controls the layout.
 
 
 == Changelog ==
