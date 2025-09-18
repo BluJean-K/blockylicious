@@ -3,7 +3,7 @@ Contributors:      Jean and The WordPress Contributors
 Tags:              block
 Requires at least: 6.7
 Tested up to:      6.8
-Stable tag:        1.1.0
+Stable tag:        1.1.1
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,8 +55,10 @@ Yes, Blockylicious can be installed on the same site where you have WooCommerce 
 
 
 == Changelog ==
-= 1.1.0 =
+= 1.1.1 =
 * Release
+Added new rich text format in index.js. Low Highlight style can now use a gradient, anything selected by the user.
+= 1.1.0 =
 Adjusted structure and path to include the blockylicious-block-patterns.php file. Moved from root to src directory.
 Added options in package.json for start and build scripts. See NPM Notes.
 
