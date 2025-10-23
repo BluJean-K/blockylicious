@@ -55,8 +55,10 @@ Yes, Blockylicious can be installed on the same site where you have WooCommerce 
 
 
 == Changelog ==
-= 1.1.1 =
+= 1.1.2 =
 * Release
+Updated required PHP version to 8.0
+= 1.1.1 =
 Added new rich text format in index.js. Low Highlight style can now use a gradient, anything selected by the user.
 = 1.1.0 =
 Adjusted structure and path to include the blockylicious-block-patterns.php file. Moved from root to src directory.
@@ -74,9 +76,11 @@ RichText’s optional onSplit prop was deprecated. Since the block.json "splitti
 
 == More Information ==
 = Developers =
-Note that the view.js file should be removed if you don't end up using it.
+Webpack scripts include options to bundle the extra PHP include files. Prefer to use "npm run start:copy-php" and "npm run build:copy-php" to include the extra PHP files. Without that, the blockylicious-block-patterns will not be included.
+
+Most blocks use render.php for the front. PiccyGallery uses a view.js file to enable user interaction.
 Note that in block.json, at the bottom is "viewScript": "file:./view.js"
-You'll need to choose between "viewScript" or "viewScriptModule." The viewScriptModule is a newer field that lets you use the Interactivity API
+This indicates PiccyGallery is using the older "viewScript", rather than "viewScriptModule." You will need to change this if you want to use the Interactivity API.
 
 Note that in block.json the support for html mode is disabled for some blocks.(Editor can't directly edit the code) If you want to enable html mode, change this to _true_
 "supports": {

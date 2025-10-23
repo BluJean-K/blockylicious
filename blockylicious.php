@@ -5,7 +5,7 @@
  * Description:       A plugin offering funky blocks.
  * Version:           1.1.0
  * Requires at least: 6.7
- * Requires PHP:      7.4
+ * Requires PHP:      8.0
  * Author:            Jean Kuyk
  * Author URI:		https://github.com/BluJean-K
  * License:           GPL-2.0-or-later
@@ -101,8 +101,8 @@ final class Blockylicious
 	}
 	// End init function
 
-	// Customization: Convert custom properties to WP CSS variables
-	static function convert_custom_properties($value)
+	// Customization: Convert custom properties such as styles or block attributes to WP CSS variables
+	public static function convert_custom_properties($value)
 	{
 		$prefix     = 'var:';
 		$prefix_len = strlen($prefix);
